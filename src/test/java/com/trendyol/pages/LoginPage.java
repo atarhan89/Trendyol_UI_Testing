@@ -1,0 +1,23 @@
+package com.trendyol.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage extends ParentPage{
+
+    @FindBy(xpath = "//button[@class='q-primary q-fluid q-button-medium q-button submit']")
+    public WebElement girisFormuGirisYapButonu;
+
+
+    @FindBy(id = "login-email")
+    public WebElement girisFormuEmailTextBox;
+
+    @FindBy(css = "#error-box-wrapper span:nth-child(2)")
+    public WebElement hataMesaji;
+
+
+    @FindBy(id = "login-password-input")
+    public WebElement girisFormuSifreTextBox;
+
+}
